@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GesturedContainerVC" customModule="Staxter" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="f8c-9c-rM5" id="SPZ-rw-qgN"/>
+                <outlet property="downArrow" destination="0dh-1T-Fm4" id="K47-CG-BwQ"/>
+                <outlet property="mainView" destination="hg1-x9-qDd" id="u0J-gB-vFf"/>
+                <outlet property="topConstraint" destination="vLH-4P-kSu" id="8Fy-ny-RoE"/>
+                <outlet property="topView" destination="yex-rd-iOj" id="5eX-hS-qyg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yex-rd-iOj">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hg1-x9-qDd">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="672"/>
+                    <subviews>
+                        <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GesturedContainerOpen" highlightedImage="GesturedContainerClose" translatesAutoresizingMaskIntoConstraints="NO" id="0dh-1T-Fm4">
+                            <rect key="frame" x="177.5" y="10" width="20" height="10"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="6Ti-47-PRF"/>
+                                <constraint firstAttribute="height" constant="10" id="82I-KK-sZa"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f8c-9c-rM5">
+                            <rect key="frame" x="0.0" y="30" width="375" height="637"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="0dh-1T-Fm4" firstAttribute="centerX" secondItem="hg1-x9-qDd" secondAttribute="centerX" id="8kM-HQ-BlW"/>
+                        <constraint firstAttribute="trailing" secondItem="f8c-9c-rM5" secondAttribute="trailing" id="BUS-15-pAP"/>
+                        <constraint firstAttribute="bottom" secondItem="f8c-9c-rM5" secondAttribute="bottom" constant="5" id="DTk-Bo-C5Y"/>
+                        <constraint firstItem="f8c-9c-rM5" firstAttribute="top" secondItem="hg1-x9-qDd" secondAttribute="top" constant="30" id="Jrr-Rd-Zum"/>
+                        <constraint firstItem="0dh-1T-Fm4" firstAttribute="top" secondItem="hg1-x9-qDd" secondAttribute="top" constant="10" id="vPh-Kz-kgP"/>
+                        <constraint firstItem="f8c-9c-rM5" firstAttribute="leading" secondItem="hg1-x9-qDd" secondAttribute="leading" id="yWs-3u-THb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hg1-x9-qDd" secondAttribute="bottom" constant="-5" id="2zs-rJ-25b"/>
+                <constraint firstItem="hg1-x9-qDd" firstAttribute="top" secondItem="yex-rd-iOj" secondAttribute="bottom" id="FeI-RG-fED"/>
+                <constraint firstItem="yex-rd-iOj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LHh-Xs-dRT"/>
+                <constraint firstItem="hg1-x9-qDd" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="PaO-cP-rg3"/>
+                <constraint firstItem="yex-rd-iOj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="W1B-NX-Wbs"/>
+                <constraint firstItem="hg1-x9-qDd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="edr-EA-Ldz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yex-rd-iOj" secondAttribute="trailing" id="qJ5-Cm-3cK"/>
+                <constraint firstItem="hg1-x9-qDd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vLH-4P-kSu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="122.78860569715144"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="GesturedContainerClose" width="38" height="4"/>
+        <image name="GesturedContainerOpen" width="38" height="13"/>
+    </resources>
+</document>
